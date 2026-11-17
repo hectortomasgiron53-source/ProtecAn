@@ -1,61 +1,141 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ProtecAn</title>
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    <header>
+
+    <header class="cabecera">
+        <img
+            src="img/logo.png"
+            alt="Logotipo de ProtecAn, una huella de animal"
+            width="56"
+            height="56"
+        />
+
         <h1>ProtecAn</h1>
-    <p>ProtecAn es una aplicación de escritorio destinada a los administradores de protectoras de animales
-        que busca facilitar el manejo y control de la misma protectora, haciendo que se pueda destinar una mayor 
-        cantidad de esfuerzo en los animales.
-    </p>
+
+        <p>
+            ProtecAn es una aplicación de escritorio destinada a los administradores
+            de protectoras de animales que busca facilitar el manejo y control de la
+            misma protectora, haciendo que se pueda destinar una mayor cantidad de
+            esfuerzo en los animales.
+        </p>
     </header>
-    
-    <aside>
+
+    <aside class="sidebar">
         <nav>
             <ul>
-                <li><a href="#dashboard">Panel principal</a></li>
+                <li>
+                    <a class="enlace-activo" href="#dashboard">Panel principal</a>
+                </li>
                 <li><a href="#aniProc">Animales en protectora</a></li>
                 <li><a href="#aniAdopt">Animales adoptados</a></li>
                 <li><a href="#emplea">Empleados</a></li>
-                <li><a href="#volunt">Voluntarios</a></li>          
+                <li><a href="#volunt">Voluntarios</a></li>
             </ul>
-            
-
         </nav>
     </aside>
 
-    <main>
-            <section id="dashboard">
-                <h2>Panel principal</h2>
-                <p>En este apartado observaremos el panel principal dela página, donde podremos ver información general de la aplicación.</p>
+    <main class="contenido-principal">
+
+        <section id="dashboard">
+            <h2>Panel principal</h2>
+            <p>
+                En este apartado observaremos el panel principal de la página,
+                donde podremos ver información general de la aplicación.
+            </p>
+        </section>
+
+        <section class="resumen">
+            <h3><b>Resumen</b></h3>
+
+            <article class="tarjeta-resumen">
+                <h4>Dato curioso 1:</h4>
+                <p>Esta aplicación nace de un proyecto de 2DMT.</p>
+            </article>
+
+            <article class="tarjeta-resumen">
+                <h4>Dato curioso 2:</h4>
+                <p>
+                    Nos diferenciamos al otorgar información para proteger
+                    a los animales ya adoptados.
+                </p>
+            </article>
+
+            <article class="tarjeta-resumen tarjeta-actividades">
+                <h4>Dato curioso 3:</h4>
+                <p>
+                    Hay estudios que demuestran que hasta el 10% de animales
+                    adoptados son nuevamente abandonados.
+                </p>
+            </article>
+        </section>
+
+        <!-- Paneles inferiores en dos columnas -->
+        <section class="paneles-inferiores">
+
+            <section class="avisos">
+                <h3>Avisos y tareas</h3>
+
+                <ul>
+                    <li class="aviso aviso-urgente">
+                        <span class="icono-aviso">!</span>
+                        <span>3 vacunas pendientes</span>
+                    </li>
+
+                    <li class="aviso aviso-urgente">
+                        <span class="icono-aviso">!</span>
+                        <span>1 ubicación por actualizar</span>
+                    </li>
+
+                    <li class="aviso aviso-neutro">
+                        <span class="icono-aviso">✓</span>
+                        <span>5 animales por actualizar</span>
+                    </li>
+
+                    <li class="aviso aviso-correcto">
+                        <span class="icono-aviso">♥</span>
+                        <span>1 adopción pendiente</span>
+                    </li>
+                </ul>
             </section>
-            <section>
-                <h3><b>Resumen</b></h3>
 
-                <article>
-                    <h4>Dato curioso 1:</h4>
-                    <p>Esta aplicación nace de un proyecto de 2DMT.</p>
-                </article>
+            <section class="proximas-actividades">
+                <h3>Próximas visitas y adopciones</h3>
 
-                <article>
-                    <h4>Dato curioso 2:</h4>
-                    <p>Nos diferenciamos al otorgar información para proteger a los animales ya adoptados.</p>
-                </article>
+                <ul>
+                    <li>
+                        <span class="hora">10:00</span>
+                        <span>Visita de adopción: Copito</span>
+                        <span class="lugar">Sala 3</span>
+                    </li>
 
-                <article>
-                    <h4>Dato curioso 3:</h4>
-                    <p>Hay estudios que demuestran que hasta el 10% de animales adoptados son nuevamente abandonados.</p>
-                </article>
+                    <li>
+                        <span class="hora">12:00</span>
+                        <span>Revisión veterinaria: Miguel</span>
+                        <span class="lugar">Clínica</span>
+                    </li>
+
+                    <li>
+                        <span class="hora">17:30</span>
+                        <span>Reunión de voluntarios</span>
+                        <span class="lugar">Sala común</span>
+                    </li>
+                </ul>
             </section>
+
+        </section>
+
     </main>
-<br><br>
-    <footer>
-        <h4>ProtecAn Versión 1.0.</h4>
 
+    <footer class="pie-pagina">
+        <h4>ProtecAn Versión 1.0.</h4>
     </footer>
+
 </body>
-</html>   
+</html>
